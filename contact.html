@@ -1,0 +1,135 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Jane Doe</title>
+	
+	<!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="screen and (max-width:480px)" href="css/stylesmobile.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/jquery-ui.js"></script>	
+	<link href="https://fonts/googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js" ></script>
+	<script src="http://code.highcharts.com/modules/exporting.js" ></script>
+	
+</head>
+
+<body>
+
+	<nav>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo">Jane Doe</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+<div class="container">
+
+	<div id="content">
+
+	<h3>Contact</h3>
+
+	<p>Please use the below map to find me.</p>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4051580632213!2d-79.94556118475602!3d40.444168761894424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2218bddc99f%3A0xeea6ccadbf7b721e!2sWarner%20Hall%2C%205000%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213%2C%20USA!5e0!3m2!1sen!2sau!4v1585214270605!5m2!1sen!2sau" 
+	width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+	<p>Please check to see when I'm free</p>
+
+
+	  <p>Please use the below form to get in touch with me.</p>
+	  
+	  
+	  <form onsubmit="return validate()">
+	  
+		<fieldset>
+			<legend>Tell me more about yourself</legend>
+			<label for="uname">Name:</label> <br/>
+			<input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength ="250"><br/><br/>
+			<label for="txtDate">Your date of birth:</label> <br>
+			<input type="date" id="txtDate" name="txtDate" value="" size="20" ><br/><br/>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Tell me about your preferences</legend>
+			<label for="flower">Your favorite flower color:</label> <br/>
+			<input type="color" id="flower" name="flower"><br/><br/>
+			<label for="message">Message:</label> <br/>
+			<textarea id="message" name="message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Let's stay in touch</legend>
+			<label for="source">How did you find out about me?</label>
+			<select id="source">
+				<option value="Google" selected>Google</option>
+				<option value="news">News article</option>
+				<option value="friend">Friend</option>
+				<option value="other">Other</option>
+			</select><br/><br/>
+  
+			<label>Please indicate if you want to receive updates via email:</label><br/>
+			<input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+			<label for="email">Please provide your email address:</label><br/>
+			<input type="email" id="email" name="email" value="" placeholder = "abc@defg.com" required ><br/><br/>
+			<label for="pswrd">Choose a password:</label><br/>
+			<input type="password" id="pswrd" name="pswrd" value="" size="20" maxlength="20"><br/>
+		</fieldset>
+		
+		<fieldset>
+			  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+		</fieldset>
+		
+		</form>
+	  	
+	</div> <!-- Close content -->
+	
+	
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class='col l12 s12'>
+					<a href="mailto:jquesenberry@cmu.edu"><img src="images/email.png" alt="Email Icon"></a>
+					<a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Logo"/></a>
+					<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				&copy;Jane Doe<br/>
+				5000 Forbes Avenue<br/>
+				Pittsburgh, PA 15213<br/>
+				412-268-0000 (h)<br/>
+				412-555-5555 (c)<br/><br/>
+
+			</div>
+		</div>
+	</footer>
+
+</div> <!-- Close container -->	
+</body>
+
+</html>
